@@ -1,0 +1,45 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+
+.banner {
+    display: flex;
+    width: 100%;
+    padding: 0 75px;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        margin: 129px 0 172px;
+    }
+
+    &__heading {
+        max-width: 552px;
+        max-height: 210px;
+        margin: 0 0 51px;
+    }
+
+    &__body {
+        max-width: 471px;
+        margin: 0 0 50px;
+    }
+
+    &__btns {
+        display: flex;
+        max-width: 330px;
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0 0 24px;
+    }
+
+    &__img {
+        max-width: 759px;
+        margin: 151px 0 182px;
+    }
+}

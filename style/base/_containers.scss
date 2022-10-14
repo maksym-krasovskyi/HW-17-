@@ -1,0 +1,18 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+}
+.container_1 {
+    display: flex;
+    max-width: 1290px;
+    width: 100%;
+}

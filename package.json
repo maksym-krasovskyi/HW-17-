@@ -1,0 +1,15 @@
+{
+  "name": "home-work-17",
+  "version": "1.0.0",
+  "description": "Home Work 17",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0"
+  }
+}
