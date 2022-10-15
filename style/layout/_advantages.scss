@@ -1,0 +1,46 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+
+.advantages {
+    display: flex;
+    width: 100%;
+    padding: 0 75px;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 250px;
+        margin: 90px 0 150px;
+    }
+
+    &__row {
+        display: flex;
+        width: 100%;
+    }
+
+    &__row:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        max-width: 520px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 138px 0 0;
+    }
+
+    &__row:nth-of-type(even) &__content {
+        margin: 0 0 0 138px;
+    }
+
+    &__heading,
+    &__body {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+}
