@@ -1,5 +1,6 @@
 @use '../abstracts/_variables.scss' as var;
 @use '../base/_typography';
+@use '../base/containers';
 
 .advantages {
     display: flex;
@@ -8,7 +9,6 @@
     justify-content: center;
 
     &__container {
-        display: flex;
         flex-direction: column;
         width: 100%;
         gap: 250px;
