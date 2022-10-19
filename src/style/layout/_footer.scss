@@ -1,0 +1,91 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        flex-direction: column;
+    }
+
+    &__upper {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 92px 0 0;
+        padding: 0 0 95px;
+        border-bottom: 1px solid var.$color_0;
+    }
+
+    &__studies {
+        display: flex;
+        flex-direction: column;
+        margin: 0 140px 0 0;
+    }
+
+    &__studies-heading {
+        margin: 0 0 28px;
+    }
+
+    &__studies-img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 0 31px;
+    }
+
+    &__studies-logo {
+        max-width: 80px;
+        margin: 0 0 11px;
+    }
+
+    &__studies-body {
+        max-width: 290px;
+        margin: 0 0 15px;
+    }
+
+    &__lower {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 52px 0 43px;
+    }
+
+    &__lower-left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__lower-body {
+        max-width: 301px;
+    }
+
+    &__logo {
+        max-width: 90px;
+        margin: 0 14px 0 0;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 176px;
+    width: 100%;
+
+    &__title {
+        margin: 0 0 21px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin: 0 0 15px;
+    }
+}

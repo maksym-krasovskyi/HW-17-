@@ -34,6 +34,10 @@
         margin: 0 138px 0 0;
     }
 
+    &__img {
+        max-width: 632px;
+    }
+
     &__row:nth-of-type(even) &__content {
         margin: 0 0 0 138px;
     }
