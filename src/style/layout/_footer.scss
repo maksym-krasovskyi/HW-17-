@@ -3,11 +3,6 @@
 @use '../base/containers';
 
 .footer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
     &__container {
         flex-direction: column;
     }
@@ -20,12 +15,20 @@
         margin: 92px 0 0;
         padding: 0 0 95px;
         border-bottom: 1px solid var.$color_0;
+        gap: 50px;
+    }
+
+    &__nav-bar {
+        display: flex;
+        width: 100%;
+        max-width: 840px;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
 
     &__studies {
         display: flex;
         flex-direction: column;
-        margin: 0 140px 0 0;
     }
 
     &__studies-heading {

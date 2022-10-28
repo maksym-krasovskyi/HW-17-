@@ -5,36 +5,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px var.$color_10;
     text-decoration: none;
-    color: var.$color_0;
     transition: 0.6s, filter 0.6s ease-in-out;
-
-    &:hover {
-        border: solid 1px var.$color_5;
-        background-color: var.$color_5;
-        color: var.$color_1;
-    }
 }
 
-.btn-1 {
+.btn-s {
     max-width: 120px;
     width: 100%;
+    min-width: 80px;
     height: 45px;
 }
 
-.btn-2,
-.btn-4 {
+.btn-m {
     max-width: 160px;
     width: 100%;
+    flex-shrink: 0;
     height: 60px;
 }
 
-.btn-3 {
+.btn-l {
     max-width: 193px;
     width: 100%;
+    flex-shrink: 0;
     height: 60px;
-    background-color: var.$color_5;
+}
+
+.btn-white {
+    background-color: var.$color_0;
     color: var.$color_1;
 
     &:hover {
@@ -44,7 +41,31 @@
     }
 }
 
-.btn-4 {
+.btn-outline-success,
+.btn-outline-secondary {
+    border: solid 1px var.$color_10;
+    color: var.$color_0;
+
+    &:hover {
+        border: solid 1px var.$color_5;
+        background-color: var.$color_5;
+        color: var.$color_1;
+    }
+}
+
+.btn-orange-secondary {
+    border: solid 1px var.$color_5;
+    background-color: var.$color_5;
+    color: var.$color_1;
+
+    &:hover {
+        border: solid 1px var.$color_10;
+        color: var.$color_0;
+        background-color: var.$color_1;
+    }
+}
+
+.btn-black-secondary {
     background-color: var.$color_0;
     color: var.$color_1;
 

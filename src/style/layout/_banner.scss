@@ -10,17 +10,18 @@
 
     &__container {
         justify-content: space-between;
-        flex-direction: row;
+        flex-flow: row;
     }
 
     &__content {
-        flex: 1 0 auto;
+        flex: 0 1 552px;
+        width: 100%;
         margin: 129px 0 172px;
     }
 
     &__heading {
         max-width: 552px;
-        max-height: 210px;
+        min-width: 300px;
         margin: 0 0 51px;
     }
 
@@ -40,6 +41,7 @@
 
     &__img {
         max-width: 759px;
+        min-width: 400px;
         margin: 151px 0 182px;
     }
 }

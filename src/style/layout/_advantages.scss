@@ -18,28 +18,30 @@
     &__row {
         display: flex;
         width: 100%;
+        justify-content: space-between;
+        gap: 30px;
     }
 
     &__row:nth-of-type(even) {
         flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 30px;
     }
 
     &__content {
         display: flex;
         width: 100%;
         max-width: 520px;
+        min-width: 0;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        margin: 0 138px 0 0;
     }
 
     &__img {
         max-width: 632px;
-    }
-
-    &__row:nth-of-type(even) &__content {
-        margin: 0 0 0 138px;
+        width: 100%;
+        min-width: 200px;
     }
 
     &__heading,

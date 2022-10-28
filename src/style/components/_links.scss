@@ -1,7 +1,7 @@
 @use '../abstracts/_variables.scss' as var;
 @use '../base/_typography';
 
-.link-1 {
+.clients__link {
     text-decoration: none;
 
     & img {
@@ -14,7 +14,7 @@
     }
 }
 
-.link-2 {
+.link-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,8 +32,7 @@
     }
 }
 
-.link-3,
-.link-4 {
+.link-info-underline {
     color: var.$color_0;
     transition: 0.6s;
 
@@ -42,13 +41,28 @@
     }
 }
 
-.link-5,
-.link-6,
+.link-info,
+.footer-nav__link,
 .link-7 {
     text-decoration: none;
     color: var.$color_0;
 
     &:hover {
         color: var.$color_10;
+    }
+}
+
+.nav__link {
+    display: flex;
+    flex-shrink: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var.$color_0;
+    transition: 0.6s, filter 0.6s ease-in-out;
+
+    &:hover {
+        padding: 5px 10px;
+        background-color: var.$color_5;
+        color: var.$color_1;
     }
 }

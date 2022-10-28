@@ -58,13 +58,19 @@
         flex-direction: row;
         max-width: 503px;
         width: 100%;
-        gap: 70px;
+        justify-content: space-between;
+        gap: 30px;
         padding: 0 0 0 70px;
         border-left: 1px solid var.$color_0;
     }
 
     &__lower-heading {
         margin: 37px 0 0 67px;
+    }
+
+    &__lower-img {
+        max-width: 176px;
+        min-width: 100px;
     }
 }
 
