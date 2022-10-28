@@ -7,6 +7,7 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
+        publicPath: '../public',
         path: path.resolve(__dirname, './public'),
     },
     module: {

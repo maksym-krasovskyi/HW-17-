@@ -3,9 +3,13 @@
     "version": "1.0.0",
     "description": "Home Work 17",
     "main": "index.js",
+    "homepage": "",
     "scripts": {
-        "start:dev": "webpack serve",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "webpack serve",
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "gh-pages -d public",
+        "predeploy": "npm run build"
     },
     "author": "",
     "license": "ISC",
@@ -23,6 +27,7 @@
     },
     "dependencies": {
         "css-loader": "^6.7.1",
+        "gh-pages": "^4.0.0",
         "style-loader": "^3.3.1"
     }
 }
