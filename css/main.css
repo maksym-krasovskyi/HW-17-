@@ -438,6 +438,22 @@ img {
   margin: 151px 0 182px;
 }
 
+.mobile-banner__img {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .banner {
+    padding: 0 20px;
+  }
+  .banner__img {
+    display: none;
+  }
+  .mobile-banner__img {
+    display: flex;
+    max-width: 375;
+  }
+}
 .clients-bar {
   display: flex;
   width: 100%;
