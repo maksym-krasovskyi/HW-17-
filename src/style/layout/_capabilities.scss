@@ -1,4 +1,5 @@
 @use '../abstracts/_variables.scss' as var;
+@use '../abstracts/_mixins.scss' as mixins;
 @use '../base/_typography';
 @use '../base/containers';
 
@@ -27,7 +28,7 @@
     &__row {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
     }
 
@@ -45,5 +46,62 @@
 
     &__body {
         text-align: center;
+    }
+}
+@include mixins.tablet {
+    .capabilities {
+        padding: 0 50px;
+
+        &__container:last-child {
+            margin: 0 0 90px;
+        }
+
+        &__heading {
+            margin: 80px 0 4px;
+        }
+
+        &__cell {
+            margin: 40px 0 0;
+        }
+
+        &__title {
+            margin: 23px 0;
+        }
+
+        &__img {
+            max-width: 100px;
+        }
+    }
+}
+
+@include mixins.mobile {
+    .capabilities {
+        padding: 0 30px;
+
+        &__container:last-child {
+            margin: 0 0 70px;
+        }
+
+        &__heading {
+            margin: 70px 0 4px;
+        }
+
+        &__row {
+            width: 100%;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        &__cell {
+            display: flex;
+            width: 45%;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0 0;
+        }
+
+        &__title {
+            margin: 23px 0;
+        }
     }
 }

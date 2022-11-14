@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Home Work 17",
     "main": "index.js",
-    "homepage": "",
+    "homepage": "https://maksym-krasovskyi.github.io/HW-17-/",
     "scripts": {
         "start": "webpack serve",
         "build": "webpack",

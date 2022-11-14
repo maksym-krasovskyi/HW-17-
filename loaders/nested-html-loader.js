@@ -20,9 +20,6 @@ function processNestedHtml(content, loaderContext) {
     if (!INCLUDE_PATTERN.test(content)) {
         return content
     } else {
-        console.log(
-            '----------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-        )
         return content.replace(INCLUDE_PATTERN, replaceHtml)
     }
 }

@@ -1,4 +1,5 @@
 @use '../abstracts/_variables.scss' as var;
+@use '../abstracts/_mixins.scss' as mixins;
 @use '../base/_typography';
 
 .btn {
@@ -73,5 +74,18 @@
         border: solid 1px var.$color_10;
         background-color: var.$color_1;
         color: var.$color_0;
+    }
+}
+@include mixins.tablet {
+    .btn-s {
+        max-width: 100px;
+    }
+
+    .btn-m {
+        max-width: 140px;
+    }
+
+    .btn-l {
+        max-width: 173px;
     }
 }

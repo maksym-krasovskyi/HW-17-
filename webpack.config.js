@@ -4,10 +4,10 @@ const nestedHtmlLoader = require('./loaders/nested-html-loader')
 const path = require('path')
 
 module.exports = {
+    devtool: 'source-map',
     mode: 'development',
     entry: './src/index.js',
     output: {
-        publicPath: '../public',
         path: path.resolve(__dirname, './public'),
     },
     module: {
@@ -47,10 +47,18 @@ module.exports = {
     },
     devServer: {
         open: true,
+        liveReload: true,
         static: {
             directory: path.join(__dirname, 'public'),
         },
         port: 3000,
+        client: {
+            progress: true,
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+        },
     },
     plugins: [
         new MiniCssExtractPlugin({

@@ -1,5 +1,7 @@
 @use '../abstracts/_variables.scss' as var;
+@use '../abstracts/_mixins.scss' as mixins;
 @use '../base/_typography';
+@use '../base/containers';
 
 .no-wait {
     display: flex;
@@ -27,5 +29,23 @@
 
     &__btn {
         margin: 0 0 161px;
+    }
+}
+
+@include mixins.tablet {
+    .no-wait {
+        &__heading {
+            max-width: 400px;
+            margin: 90px 0 15px;
+        }
+
+        &__body {
+            max-width: 350px;
+            margin: 0 0 34px;
+        }
+
+        &__btn {
+            margin: 0 0 90px;
+        }
     }
 }

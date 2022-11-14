@@ -1,4 +1,5 @@
 @use '../abstracts/_variables.scss' as var;
+@use '../abstracts/_mixins.scss' as mixins;
 @use '../base/_typography';
 @use '../base/containers';
 
@@ -29,6 +30,7 @@
         margin: 53px 0 105px;
         justify-content: space-between;
         flex-direction: row;
+        gap: 30px;
     }
 
     &__upper-content {
@@ -50,7 +52,19 @@
 
     &__lower-container {
         flex-direction: row;
+        justify-content: space-between;
         margin: 80px 0 84px;
+    }
+
+    &__lower-content {
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 67px;
+        margin: 10px 0 4px;
+        max-width: 704px;
+        width: 100%;
     }
 
     &__lower-rating {
@@ -60,15 +74,12 @@
         width: 100%;
         justify-content: space-between;
         gap: 30px;
-        padding: 0 0 0 70px;
+        padding: 0 106px 0 71px;
         border-left: 1px solid var.$color_0;
     }
 
-    &__lower-heading {
-        margin: 37px 0 0 67px;
-    }
-
     &__lower-img {
+        width: 100%;
         max-width: 176px;
         min-width: 100px;
     }
@@ -78,8 +89,156 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    max-width: 150px;
+    min-width: 0;
 
     &__logo {
+        max-width: 150px;
+        min-width: 0;
         margin: 30px 0 20px;
+    }
+}
+
+@include mixins.tablet {
+    .reviews {
+        &__upper {
+            padding: 0 50px;
+        }
+
+        &__lower {
+            padding: 0 54px;
+        }
+
+        &__upper-container {
+            margin: 53px 0 70px;
+            gap: 30px;
+        }
+
+        &__upper-content {
+            max-width: 920px;
+        }
+
+        &__upper-body {
+            margin: 10px 0 23px;
+        }
+
+        &__upper-name {
+            margin: 0 0 7px;
+        }
+
+        &__upper-logo {
+            max-width: 90px;
+        }
+
+        &__upper-img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        &__lower-container {
+            margin: 60px 0 64px;
+        }
+
+        &__lower-content {
+            gap: 30px;
+        }
+
+        &__lower-rating {
+            max-width: 50%;
+            width: 100%;
+            gap: 20px;
+        }
+
+        &__lower-img {
+            max-width: 100px;
+            min-width: 50px;
+        }
+    }
+
+    .rating {
+        &__logo {
+            max-height: 25px;
+            margin: 30px 0 20px;
+        }
+
+        &__stars {
+            max-width: 100px;
+            margin: 0 0 5px;
+        }
+    }
+}
+
+@include mixins.mobile {
+    .reviews {
+        &__upper {
+            padding: 0 30px;
+        }
+
+        &__lower {
+            padding: 0 30px;
+        }
+
+        &__upper-container {
+            display: flex;
+            margin: 50px 0;
+            align-items: center;
+            flex-flow: column-reverse;
+        }
+
+        &__upper-content {
+            max-width: 768px;
+        }
+
+        &__upper-body {
+            margin: 10px 0 23px;
+        }
+
+        &__upper-name {
+            margin: 0 0 7px;
+        }
+
+        &__upper-img {
+            max-width: 310px;
+            min-width: 0;
+        }
+
+        &__lower-container {
+            flex-flow: row wrap;
+            margin: 50px 0 54px;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__lower-content {
+            display: flex;
+            width: 45%;
+            align-items: center;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 0;
+            gap: 20px;
+        }
+
+        &__lower-rating {
+            display: flex;
+            flex-flow: row wrap;
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 0;
+            border-left: 0;
+        }
+
+        &__lower-heading {
+            text-align: center;
+        }
+
+        &__lower-img {
+            max-width: 176px;
+            min-width: 100px;
+        }
     }
 }

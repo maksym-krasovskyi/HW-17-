@@ -1,4 +1,5 @@
 @use '../abstracts/_variables.scss' as var;
+@use '../abstracts/_mixins.scss' as mixins;
 @use '../base/_typography';
 @use '../base/containers';
 
@@ -16,6 +17,17 @@
     display: flex;
     width: 100%;
     margin: 34px 0;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.menu__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
@@ -53,11 +65,96 @@
     }
 }
 
-.header-right {
+.header-btns {
     display: flex;
     max-width: 250px;
-    max-height: 45px;
     width: 100%;
     margin: 25px 0;
     gap: 10px;
 }
+
+.mobile-menu {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@include mixins.tablet {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu__btn {
+        background-color: var.$color_1;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        z-index: 1;
+        max-width: 250px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__content {
+        display: flex;
+        flex-flow: column-reverse;
+        position: relative;
+        width: 100%;
+        border: 1px solid var.$color_11;
+        background-color: var.$color_1;
+        padding: 20px;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+    }
+
+    .nav {
+        display: flex;
+        width: 100%;
+
+        &__list {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            list-style: none;
+            gap: 0 23px;
+        }
+    }
+
+    .header-btns {
+        display: flex;
+        flex-flow: column;
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .close {
+        display: flex;
+        background-color: var.$color_11;
+        margin: 20px 0 0;
+        align-self: center;
+    }
+
+    .close:hover,
+    .close:focus {
+        cursor: pointer;
+    }
+}
+
+

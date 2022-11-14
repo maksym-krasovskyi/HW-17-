@@ -5,6 +5,6 @@
     ],
     "rules": {
         "selector-class-pattern": null,
-        "scss/dollar-variable-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$"
+        "scss/dollar-variable-pattern": "^([a-z][a-z0-9]*)((_|-)[a-z0-9]+)*$"
     }
 }

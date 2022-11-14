@@ -1,3 +1,4 @@
+// Colors
 $color_0: #000;
 $color_1: #fff;
 $color_2: #fff;
@@ -10,3 +11,9 @@ $color_8: #c9e8f2;
 $color_9: #dabc98;
 $color_10: rgb(0 0 0 / 50%);
 $color_11: #ccc;
+
+// Breakpoints
+$mobile: 375px;
+$tablet-sd: 768px;
+$tablet-hd: 1024px;
+$desktop-sd: 1440px;
