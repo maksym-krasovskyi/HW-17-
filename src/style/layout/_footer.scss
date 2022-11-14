@@ -4,6 +4,8 @@
 @use '../base/containers';
 
 .footer {
+    padding: 0 75px;
+
     &__container {
         flex-direction: column;
     }
@@ -97,6 +99,8 @@
 
 @include mixins.tablet {
     .footer {
+        padding: 0 50px;
+
         &__container {
             flex-direction: column;
         }
@@ -165,6 +169,8 @@
 
 @include mixins.mobile {
     .footer {
+        padding: 0 30px;
+
         &__container {
             flex-direction: column;
         }
@@ -199,6 +205,10 @@
             display: flex;
             flex-flow: row;
             gap: 10px;
+        }
+
+        &__lower-body {
+            text-align: center;
         }
     }
 

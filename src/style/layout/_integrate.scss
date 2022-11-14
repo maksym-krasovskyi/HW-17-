@@ -39,6 +39,8 @@
 
 @include mixins.tablet {
     .integrate {
+        padding: 0 50px;
+
         &__heading {
             max-width: 450px;
             margin: 90px 0 0;
@@ -56,5 +58,11 @@
         &__btn {
             margin: 0 0 90px;
         }
+    }
+}
+
+@include mixins.mobile {
+    .integrate {
+        padding: 0 30px;
     }
 }
