@@ -512,6 +512,13 @@ img {
 }
 
 @media (min-width: 0) and (max-width: 1024px) {
+  .header-body {
+    height: 70px;
+    padding: 10px 50px;
+  }
+  .header-main {
+    margin: 9px 0;
+  }
   .mobile-menu {
     display: flex;
   }
@@ -574,6 +581,11 @@ img {
   .close:hover,
 .close:focus {
     cursor: pointer;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header-body {
+    padding: 10px 30px;
   }
 }
 .banner {
@@ -648,7 +660,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .banner {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .banner__container {
     display: flex;
@@ -732,7 +744,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .clients-bar {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .clients {
     margin: 50px 0;
@@ -808,7 +820,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .advantages {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .advantages__container {
     gap: 70px;
@@ -900,7 +912,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .capabilities {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .capabilities__container:last-child {
     margin: 0 0 70px;
@@ -990,7 +1002,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .productivity {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .productivity__heading {
     margin: 54px 0 0;
@@ -1160,7 +1172,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .reviews__upper {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .reviews__lower {
     padding: 0 30px;
@@ -1268,7 +1280,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .integrate {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 .no-wait {
@@ -1297,6 +1309,9 @@ img {
 }
 
 @media (min-width: 0) and (max-width: 1024px) {
+  .no-wait {
+    padding: 0 50px;
+  }
   .no-wait__heading {
     max-width: 400px;
     margin: 90px 0 15px;
@@ -1307,6 +1322,11 @@ img {
   }
   .no-wait__btn {
     margin: 0 0 90px;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .no-wait {
+    padding: 0 30px;
   }
 }
 .footer {
@@ -1357,7 +1377,7 @@ img {
   width: 100%;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   margin: 52px 0 43px;
 }
 .footer__lower-left {
@@ -1447,7 +1467,7 @@ img {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .footer {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .footer__container {
     flex-direction: column;
@@ -1472,6 +1492,8 @@ img {
   }
   .footer__lower-left {
     justify-content: center;
+    align-items: center;
+    flex-flow: column;
   }
   .footer__lower-right {
     display: flex;
