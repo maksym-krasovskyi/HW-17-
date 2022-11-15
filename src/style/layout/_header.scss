@@ -82,6 +82,15 @@
 }
 
 @include mixins.tablet {
+    .header-body {
+        height: 70px;
+        padding: 10px 50px;
+    }
+
+    .header-main {
+        margin: 9px 0;
+    }
+
     .mobile-menu {
         display: flex;
     }
@@ -157,4 +166,8 @@
     }
 }
 
-
+@include mixins.mobile {
+    .header-body {
+        padding: 10px 30px;
+    }
+}

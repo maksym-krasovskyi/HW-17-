@@ -34,6 +34,8 @@
 
 @include mixins.tablet {
     .no-wait {
+        padding: 0 50px;
+
         &__heading {
             max-width: 400px;
             margin: 90px 0 15px;
@@ -47,5 +49,10 @@
         &__btn {
             margin: 0 0 90px;
         }
+    }
+}
+@include mixins.mobile {
+    .no-wait {
+        padding: 0 30px;
     }
 }
